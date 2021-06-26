@@ -1,4 +1,15 @@
 - name: Create Homework Assignment project
+  tower_project:
+    name: "{{ proj_name }}"
+    description: "Ansible Homework"
+    organization: Default
+    scm_url: "{{ scm_url }}"
+    scm_type: git
+    scm_branch: master
+    scm_update_on_launch: true
+    state: present
+    tower_username: admin
+    tower_password: r3dh4t1!
 
 
 - name: Machine Credentail to connect to workstation using openstack.pub
