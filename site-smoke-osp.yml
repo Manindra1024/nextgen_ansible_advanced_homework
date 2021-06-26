@@ -8,7 +8,7 @@
     register: info
 
   - debug:
-    msg: "{{ info }}"
+      msg: "{{ info }}"
     
   - name: Curl website
     uri:
