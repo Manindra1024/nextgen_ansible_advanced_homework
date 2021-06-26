@@ -6,6 +6,9 @@
       cloud: openstack
       server: frontend
     register: info
+
+  - debug:
+    msg: "{{ info }}"
     
   - name: Curl website
     uri:
